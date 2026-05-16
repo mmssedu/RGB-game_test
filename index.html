@@ -1313,7 +1313,7 @@
         button.setAttribute("aria-pressed", "false");
       });
       revealOriginalColor(color);
-      feedback.textContent = `정답! ${state.target.name} 물체는 ${color.bits.map((bit, i) => bit ? ["R", "G", "B"][i] : null).filter(Boolean).join(" + ") || ""}반사하지 않습니다. +${gained}점`;
+      feedback.textContent = `정답! ${state.target.name} 물체는 ${color.bits.map((bit, i) => bit ? ["R", "G", "B"][i] : null).filter(Boolean).join(" + ") || "빛없음"}을/를 반사합니다. +${gained}점`;
       renderStats();
       setTimeout(nextStage, 1500);
     }
